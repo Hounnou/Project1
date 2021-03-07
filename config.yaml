@@ -3,42 +3,47 @@ languageCode: en-us
 theme: aafu
 params:
   aboutme:
-    description: This is a demo of the `aafu` theme. It has `light`, `dark`, `ocean`,
-      and `pinkish` themes.
+    description: I am from Benin, West Africa. After coming to the USA as a Fulbright scholar, I have expertise in International 
+      Development working at the International Institute of Tropical Agriculture and the Netherlands Organization of Development.
+      My academic journey in the USA has led me to major in Agricultural Economics at the University of Oklahoma with focus
+      in economic modelling for climate change. Upon completion of my master's degree, I move to the University of Illinois where I am
+      pursuing a double major in Applied Statistics and Informatics/Data Analytics and Visualization. My research focus is how to leverage
+      Machine Learning in International Development and Education. I also want to establish the link between Machine Learning and Applied Econometrics,
+      including Spatial Econometrics, Financial Econometrics and Time Series Analysis for future financial market. I speak English, French, Adja, Mina and Fon.
     icon: fas fa-user
     title: About Me
   author: Darshan Baral
-  copyright: short copyright message
+  copyright: 
   description: Website title
   education:
     icon: fas fa-graduation-cap
     list:
-      - college: University of State-City
-        dates: 2013 - 2018
-        degree: Ph.D. in Subject
-        thesis_title: 'Effect of humans on other humans: a study of human behavior.'
+      - college: University of Illinois
+        dates: 2017-present
+        degree: Ph.D. candidate in Informatics/Data Analytics
+        thesis_title: 'Three Essays on Machine Learning.'
         thesis_url: '#'
-      - college: University of State-City
-        dates: 2013 - 2018
-        degree: M.S. in Subject
-        thesis_title: 'Effect of humans on other humans: a study of human behavior.'
+      - college: Oklahoma State University
+        dates: 2015 - 2017
+        degree: M.S. in Applied Economics
+        thesis_title: 'Optimal selection of Best Agricultural Management Practices.'
         thesis_url: '#'
-      - college: University of State-City
-        dates: 2004 - 2009
-        degree: B.S. in Subject
+      - college: University of Parakou/Benin
+        dates: 2003 - 2008
+        degree: B.S. in Agricultural Engineering
     title: Education
   experience:
     icon: fas fa-briefcase
     list:
-      - company: Company Name
-        dates: 2019 - *Present*
-        details: Printed from desktop. Sent [emails](#). Called people using telephone.
-          Drank water from office cooler. Ate donuts on people's birthdays.
-        position: Job Title
-      - company: Company Name
-        dates: 2018 - 2019
-        position: Job Title
-        url: '#'
+      - company: AgReach/University of Illinois
+        dates: 2017 - *Present*
+        details: Qualtrics Survey Design, Data Collection, Data Analysis and Results Dissemination.
+        position: Research Assistant
+        url: 'https://agreach.illinois.edu/who-we-are/our-team'
+      - company: Fulbright
+        dates: 2013 - 2015
+        position: Fulbright Scholar
+        url: 'https://us.fulbrightonline.org/#&panel1-4'
     title: Experiences
   favicons:
     metas: "\r\n        <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"apple-touch-icon.png\">\r\n
@@ -51,31 +56,31 @@ params:
   hobby:
     icon: fas fa-gamepad
     list:
-      - hobby: Cooking
-      - hobby: Hiking
-      - hobby: Baking
+      - hobby: Gospel Musics
+      - hobby: Reading
+      - hobby: Obama Speeches
     title: Hobbies
   profile:
-    location: City Name, ST
-    name: First Last, Abbr.
+    location: Urbana, IL USA
+    name: Leon Hounnou, PhD
     photo: profile.jpg
-    tagline: Title
+    tagline: Research Assistant
   project:
     icon: fas fa-project-diagram
     list:
-      - description: Description of the project
-        title: Project 1
+      - description: Predictive modelling with ML.
+        title: Machine Learning
         url: '#'
-      - description: Description of the project
-        title: Project 2
+      - description: Applied Financial Econometrics, Financial Risk Management.
+        title: Financial Analytics
         url: '#'
-      - description: Description of the project
-        title: Project 3
+      - description: Spatial Impact Evaluation, Spatial Panel Data Modelling.
+        title: Spatial Econometrics
         url: '#'
-      - description: Description of the project
-        title: Project 4
-        url: '#'
-    title: Projects
+      #- description: Description of the project
+      #  title: Project 4
+       # url: '#'
+    title: Interests
   publication:
     format:
       - date
@@ -84,25 +89,22 @@ params:
       - journal
     icon: fas fa-book
     list:
-      - authors: F Last, F Second, P secondary
-        date: '2018'
-        journal: Journal of Field 52 (16), 9033-9044
-        title: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+      - authors: Leon Hounnou, B Wade Brorsen, Jon T Biermacher, Charles T Rohla
+        date: '2019'
+        journal: Journal of Plant Nutrition 42(5), 512-516.
+        title: Foliar applied zinc and the performance of pecan trees.
         type: Journal Articles
-        url: '#'
-      - authors: F Last, F Second, P secondary
-        date: '2018'
-        journal: Journal of Field 52 (16), 9033-9044
-        title: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+        url: 'https://www.tandfonline.com/doi/full/10.1080/01904167.2019.1567771'
+      - authors: Leon Hounnou
+        date: '2015'
+        journal: 
+        title: Modeling Least Cost Selection of Best Management Practices to Reduce Soil Erosion in the Fort Cobb Watershed Using Swat
         type: Journal Articles
-        url: '#'
-      - authors: F Last, F Second, P secondary
-        date: '2018'
-        journal: Journal of Field 52 (16), 9033-9044
-        title: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
+        url: 'https://scholar.google.com/citations?user=o4zIiYEAAAAJ&hl=en&oi=ao'
+      - authors: Leon Hounnou, Paul McNamara
+        date: '2021'
+        journal: Journal of African Economies.
+        title: Assessing the Organizational Performance of Area Stakeholder Panels (ASPs) in Malawi A spatial Analysis Aproach.
         type: Proceedings
         url: '#'
     title: Publications
@@ -121,40 +123,40 @@ params:
   skill:
     icon: fas fa-cogs
     list:
-      - skill: Skill 1, Skill 2
+      - skill: Machine Learning, Financial Analytics.
         skillrating: 90
-      - skill: Skill 3
-        skillrating: 80
-      - skill: Skill 4
-        skillrating: 50
+      - skill: R, Python, SAS, SQL, Stata.
+        skillrating: 85
+      - skill: GIS, SWAT (Soil and Water Assessment Tool), Latex.
+        skillrating: 85
     panelId: skill-panel
     title: Skills
   social:
     list:
       - icon: fab fa-linkedin-in
         title: LinkedIn
-        url: '#'
-      - icon: fab fa-stack-overflow
-        title: StackOverflow
-        url: '#'
+        url: 'www.linkedin.com/in/leon-hounnou '
+      #- icon: fab fa-stack-overflow
+       # title: StackOverflow
+      #  url: '#'
       - icon: fab fa-github
         title: GitHub
         url: '#'
-      - icon: fab fa-twitter
-        title: Twitter
-        url: '#'
-      - icon: fab fa-orcid
-        title: Orcid
-        url: '#'
+      #- icon: fab fa-twitter
+       # title: Twitter
+        #url: '#'
+      #- icon: fab fa-orcid
+      #  title: Orcid
+      #  url: '#'
       - icon: ai ai-google-scholar
         title: Google Scholar
-        url: '#'
-      - icon: fab fa-researchgate
-        title: ResearchGate
-        url: '#'
+        url: 'https://scholar.google.com/citations?user=o4zIiYEAAAAJ&hl=en&oi=ao'
+      #- icon: fab fa-researchgate no
+       # title: ResearchGate
+       # url: '#'
     title: Links
   theme:
-    mainTheme: ocean
-    showAttribute: yes
+    mainTheme: dark
+    showAttribute: no
     singlePage: no
   title: Aafu theme

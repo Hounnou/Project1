@@ -1,0 +1,41 @@
+---
+title: "KNN classification"
+author: "Frida Gomam"
+date: 2021-03-05
+
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="handwritten-digit-data" class="section level1">
+<h1>Handwritten Digit Data</h1>
+<p>Fit the model</p>
+<pre class="r"><code> library(ElemStatLearn)
+mydata = zip.train[sample(1:nrow(zip.train), size = 500), ]
+kgrid = c(1:20)
+  TrainingError = rep(NA, 20)
+  TestError = rep(NA, 20)
+for (i in 1:20)
+{
+TrainingError[i] = mean(FNN::knn(train = mydata[, -1], test = mydata[, -1],
+cl = as.factor(mydata[, 1]), k = kgrid[i]) != mydata[, 1])
+TestError[i] = mean(FNN::knn(train = mydata[, -1], test = zip.test[, -1],
+cl = as.factor(mydata[, 1]), k = kgrid[i]) != zip.test[, 1])
+}</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>Comparing training error to test error. See Figure <a href="#fig:pie">1</a> below:</p>
+<pre class="r"><code>plot(kgrid, TestError, ylim = c(0, max(TestError)), ylab = &quot;Test error&quot;, 
+     xlab = &quot;K value&quot;, pch = 16, col = &quot;6&quot;)
+points(kgrid, TrainingError, pch = 19, col = &quot;4&quot;)
+legend(&quot;bottom&quot;, c(&quot;Training error&quot;, &quot;Test error&quot;), col = c(&quot;4&quot;, &quot;6&quot;), 
+       pch = 19, cex = 1.5, bg=&#39;lightblue&#39;)</code></pre>
+<div class="figure"><span id="fig:pie"></span>
+<img src="{{< blogdown/postref >}}index_files/figure-html/pie-1.png" alt="Errors against K value" width="672" />
+<p class="caption">
+Figure 1: Errors against K value
+</p>
+</div>
+</div>
