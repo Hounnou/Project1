@@ -135,13 +135,13 @@ params:
     list:
       - icon: fab fa-linkedin-in
         title: LinkedIn
-        url: 'www.linkedin.com/in/leon-hounnou '
+        url: 'https://linkedin.com/in/hounnouleon'
       #- icon: fab fa-stack-overflow
        # title: StackOverflow
       #  url: '#'
       - icon: fab fa-github
         title: GitHub
-        url: '#'
+        url: 'https://github.com/Hounnou'
       #- icon: fab fa-twitter
        # title: Twitter
         #url: '#'
