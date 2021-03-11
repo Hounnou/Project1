@@ -1,37 +1,45 @@
 ---
-title: "Hello R Markdown"
+title: "KNN classification"
 author: "Frida Gomam"
-date: 2020-12-01T21:13:14-05:00
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+date: 2021-03-05
+
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# R Markdown
+# Handwritten Digit Data
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Fit the model
 
-You can embed an R code chunk like this:
 
 ```{r cars}
-summary(cars)
-fit <- lm(dist ~ speed, data = cars)
-fit
+ library(ElemStatLearn)
+mydata = zip.train[sample(1:nrow(zip.train), size = 500), ]
+kgrid = c(1:20)
+  TrainingError = rep(NA, 20)
+  TestError = rep(NA, 20)
+for (i in 1:20)
+{
+TrainingError[i] = mean(FNN::knn(train = mydata[, -1], test = mydata[, -1],
+cl = as.factor(mydata[, 1]), k = kgrid[i]) != mydata[, 1])
+TestError[i] = mean(FNN::knn(train = mydata[, -1], test = zip.test[, -1],
+cl = as.factor(mydata[, 1]), k = kgrid[i]) != zip.test[, 1])
+}
 ```
 
 # Including Plots
 
-You can also embed plots. See Figure \@ref(fig:pie) for example:
+Comparing training error to test error. See Figure \@ref(fig:pie) below:
 
-```{r pie, fig.cap='A fancy pie chart.', tidy=FALSE}
-par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c('Sky', 'Sunny side of pyramid', 'Shady side of pyramid'),
-  col = c('#0292D8', '#F7EA39', '#C4B632'),
-  init.angle = -50, border = NA
-)
+```{r pie, fig.cap='Errors against K value', tidy=FALSE}
+plot(kgrid, TestError, ylim = c(0, max(TestError)), ylab = "Test error", 
+     xlab = "K value", pch = 16, col = "6")
+points(kgrid, TrainingError, pch = 19, col = "4")
+legend("bottom", c("Training error", "Test error"), col = c("4", "6"), 
+       pch = 19, cex = 1.5, bg='lightblue')
+
 ```
+
+

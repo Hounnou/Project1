@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://www.hounnouleon.com/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.hounnouleon.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning</title>
+      <link>https://www.hounnouleon.com/blog/post_2/</link>
+      <pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.hounnouleon.com/blog/post_2/</guid>
+      <description>Handwritten Digit Data I fitted a Knn model to the Handwritten Digit data available in ElemStatLearn package. I randomly split the dataset into training and test data. The size of the training data is 500. I Plotted the two errors against the corresponding values of k and I determined the optimal k.</description>
+    </item>
+    
+    <item>
+      <title>KNN classification</title>
+      <link>https://www.hounnouleon.com/blog/2020-12-01-r-rmarkdown/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.hounnouleon.com/blog/2020-12-01-r-rmarkdown/</guid>
+      <description>Handwritten Digit DataFit the model
+ library(ElemStatLearn)mydata = zip.train[sample(1:nrow(zip.train), size = 500), ]kgrid = c(1:20)TrainingError = rep(NA, 20)TestError = rep(NA, 20)for (i in 1:20){TrainingError[i] = mean(FNN::knn(train = mydata[, -1], test = mydata[, -1],cl = as.factor(mydata[, 1]), k = kgrid[i]) != mydata[, 1])TestError[i] = mean(FNN::knn(train = mydata[, -1], test = zip.test[, -1],cl = as.factor(mydata[, 1]), k = kgrid[i]) !</description>
+    </item>
+    
+  </channel>
+</rss>

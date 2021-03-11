@@ -1,15 +1,12 @@
-baseURL: https://www.example.org/
+baseURL: https://www.hounnouleon.com/
 languageCode: en-us
-theme: aafu
+theme: Aafu
 params:
   aboutme:
-    description: I am from Benin, West Africa. After coming to the USA as a Fulbright scholar, I have expertise in International 
-      Development working at the International Institute of Tropical Agriculture and the Netherlands Organization of Development.
-      My academic journey in the USA has led me to major in Agricultural Economics at the University of Oklahoma with focus
-      in economic modelling for climate change. Upon completion of my master's degree, I move to the University of Illinois where I am
-      pursuing a double major in Applied Statistics and Informatics/Data Analytics and Visualization. My research focus is how to leverage
-      Machine Learning in International Development and Education. I also want to establish the link between Machine Learning and Applied Econometrics,
-      including Spatial Econometrics, Financial Econometrics and Time Series Analysis for future financial market. I speak English, French, Adja, Mina and Fon.
+    description: I am pursuing a double major in Applied Statistics and Informatics/Data Analytics and Visualization at the University of Illinois at Urbana Champaign (UIUC). My research focus is how to leverage
+      Machine Learning in Finance and International Development. I have expertise in Spatial Econometrics, Financial Econometrics, Supervised and Unsupervised learning, Reinforcement 
+      learning and Time Series Analysis with application in portfolio selection, option pricing and credit card fraud detection. I can implement these models using Python or R. Before coming to UIUC, I got a master's degree in Applied Economics from the University
+      of Oklahoma as a Fulbright scholar, with hands-on experience in climate change modelling and optimal math programming in GAMS. I speak English, French, Adja, Mina and Fon.
     icon: fas fa-user
     title: About Me
   author: Darshan Baral
