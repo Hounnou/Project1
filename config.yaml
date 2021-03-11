@@ -157,3 +157,8 @@ params:
     showAttribute: no
     singlePage: no
   title: Aafu theme
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
