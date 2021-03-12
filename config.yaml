@@ -1,4 +1,4 @@
-baseURL: https://hounnouleon.com/
+baseURL: https://localhost:4321/
 languageCode: en-us
 theme: Aafu
 params:
