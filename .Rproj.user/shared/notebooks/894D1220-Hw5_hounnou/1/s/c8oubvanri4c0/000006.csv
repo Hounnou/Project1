@@ -1,0 +1,8 @@
+"0","beta.diff <- myfit[1:100, ] - as.matrix(glmnetfit$beta[1:100, ])"
+"0","max(abs(beta.diff))"
+"1","[1]"
+"1"," 0.02497565"
+"1","
+"
+"0","plot(lambda_all, colSums(abs(beta.diff)), ylab = ""Absolute Difference in betas"","
+"0","     xlab = ""Value of lambda"")"

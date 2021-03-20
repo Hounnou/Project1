@@ -1,0 +1,2 @@
+"0","  matplot(t(glmnetfit$beta[1:10, ]), type = ""l"", xlab = ""Value of Lambda"","
+"0","  ylab = ""Estimated Beta Coefficient"", main = ""Glmnet"")"

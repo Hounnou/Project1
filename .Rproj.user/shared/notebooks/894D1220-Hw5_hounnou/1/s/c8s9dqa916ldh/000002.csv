@@ -1,0 +1,7 @@
+"0","glmnetfit3 = glmnet(X_org, y_org)"
+"0","max_lambda = max(t(X) %*% y_org) / n"
+"0","print(max_lambda)"
+"1","[1]"
+"1"," 0.568889"
+"1","
+"
